@@ -129,8 +129,10 @@
       area(4.5, 6); 
 
   //40
-  print("<h3> 40 - Calculo de Area de terreno: </h3> <br>");
-    
+  print("<h3> 40 - Log de eventos: </h3> <br>");
+      $current_timestamp = time();
+      print("<p> O horario atual é: ". date('y-m-d H:i:s', $current_timestamp)); 
+      
     
 
 
