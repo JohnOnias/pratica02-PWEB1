@@ -53,12 +53,40 @@
 
 
     //45
-      print("<h3> Biblioteca de Funções: </h3> <br>");
+      print("<h3> 45 - Biblioteca de Funções: </h3> <br>");
       print("<p> Funçoes adcionadas a apenas um arquivo e importadas!</p>");
 
 
     //46
-    print("<h3> Tratamentos de arquivos essenciais: </h3> <br>");
+    print("<h3> 46 - Tratamentos de arquivos essenciais: </h3>"); 
+
+    print("<p>Uma grande diferença entre include e require: quando um arquivo é incluído com a includeinstrução e o PHP não consegue encontrá-lo, o script continuará a ser executado!</p>"); 
+  
+    //47
+    print("<h3> 47 - Arquivos de configuração: </p>");
+      define('DB_HOST', 'localhost');
+      define('DB_USER', 'seu_usuario');
+      define('DB_PASS', 'sua_senha');
+      define('DB_NAME', 'seu_banco');
+
+    require_once 'config.php';
+    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+    if ($conn->connect_error) {
+        die("Falha na conexão: " . $conn->connect_error);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
   </div>
